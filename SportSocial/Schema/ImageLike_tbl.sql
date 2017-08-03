@@ -1,0 +1,10 @@
+
+DROP TABLE IF EXISTS `ImageLike_tbl`;
+CREATE TABLE IF NOT EXISTS `ImageLike_tbl` (
+  `LikeId` int(11) NOT NULL AUTO_INCREMENT,
+  `InsertedDate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `ImageId` int(11) NOT NULL,
+  `UserId` int(11) NOT NULL,
+  `Liked` int(11) NOT NULL,
+  PRIMARY KEY (`LikeId`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=38 ;

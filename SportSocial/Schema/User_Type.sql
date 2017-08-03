@@ -1,0 +1,8 @@
+Use SportSocial;
+
+ALTER TABLE User_tbl ADD COLUMN `UserType` int(11) NOT NULL DEFAULT '1';
+
+ALTER TABLE User_tbl ADD COLUMN  `password` VARCHAR( 5000 ) CHARACTER SET latin1 DEFAULT NULL;
+
+ALTER TABLE User_tbl ADD COLUMN  `UniqueName` varchar(5000) CHARACTER SET latin1 DEFAULT NULL;
+
